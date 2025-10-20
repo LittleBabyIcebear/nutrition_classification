@@ -97,17 +97,19 @@ The confusion matrix confirms the model's high accuracy, with very few misclassi
 * **Environment:** `Python 3.11`
 
 ## Repository Structure
-├── gizi_api.py # FastAPI application script.
-├── knn_gizi_ver2.ipynb # Main notebook for training and analysis.
-├── data_gizi.csv # Source data for Stage 1 (weight prediction).
-├── data_balita.csv # Source data for Stage 2 (status classification).
-├── data_balita_include_bb.csv # Augmented dataset (output of Stage 1).
-├── test_data.csv # 50-sample test file for API validation.
-├── knn_model.joblib # Saved KNN classification model.
-├── scaler.joblib # Saved StandardScaler for classification features.
-├── encoders.joblib # Saved LabelEncoders for 'Jenis Kelamin' and 'Status Gizi'.
+```text
+.
+├── gizi_api.py                     # FastAPI application script.
+├── knn_gizi_ver2.ipynb             # Main notebook for training and analysis.
+├── data_gizi.csv                   # Source data for Stage 1 (weight prediction).
+├── data_balita.csv                 # Source data for Stage 2 (status classification).
+├── data_balita_include_bb.csv      # Augmented dataset (output of Stage 1).
+├── test_data.csv                   # 50-sample test file for API validation.
+├── knn_model.joblib                # Saved KNN classification model.
+├── scaler.joblib                   # Saved StandardScaler for classification features.
+├── encoders.joblib                 # Saved LabelEncoders for 'Jenis Kelamin' and 'Status Gizi'.
 ├── inverse_status_gizi_mapping.joblib # Dictionary to map class indices back to labels.
-└── requirements.txt # Required Python libraries.
+└── requirements.txt                # Required Python libraries.
 
 ## How to Run
 
