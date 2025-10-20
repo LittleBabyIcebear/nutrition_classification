@@ -110,6 +110,7 @@ The confusion matrix confirms the model's high accuracy, with very few misclassi
 ├── encoders.joblib                 # Saved LabelEncoders for 'Jenis Kelamin' and 'Status Gizi'.
 ├── inverse_status_gizi_mapping.joblib # Dictionary to map class indices back to labels.
 └── requirements.txt                # Required Python libraries.
+```
 
 ## How to Run
 
@@ -212,7 +213,7 @@ Predicts the nutritional status for multiple children via a CSV file upload.
 
 ---
 ### `requirements.txt`
-
+```text
 pandas==2.2.1
 numpy==1.26.3
 seaborn==0.13.2
@@ -223,3 +224,4 @@ plotly==5.20.0
 fastapi==0.115.13
 pydantic==2.11.5
 uvicorn
+```
