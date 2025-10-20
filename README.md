@@ -97,7 +97,17 @@ The confusion matrix confirms the model's high accuracy, with very few misclassi
 * **Environment:** `Python 3.11`
 
 ## Repository Structure
-. ├── gizi_api.py # FastAPI application script. ├── knn_gizi_ver2.ipynb # Main notebook for training and analysis. ├── data_gizi.csv # Source data for Stage 1 (weight prediction). ├── data_balita.csv # Source data for Stage 2 (status classification). ├── data_balita_include_bb.csv # Augmented dataset (output of Stage 1). ├── test_data.csv # 50-sample test file for API validation. ├── knn_model.joblib # Saved KNN classification model. ├── scaler.joblib # Saved StandardScaler for classification features. ├── encoders.joblib # Saved LabelEncoders for 'Jenis Kelamin' and 'Status Gizi'. ├── inverse_status_gizi_mapping.joblib # Dictionary to map class indices back to labels. └── requirements.txt # Required Python libraries.
+├── gizi_api.py # FastAPI application script.
+├── knn_gizi_ver2.ipynb # Main notebook for training and analysis.
+├── data_gizi.csv # Source data for Stage 1 (weight prediction).
+├── data_balita.csv # Source data for Stage 2 (status classification).
+├── data_balita_include_bb.csv # Augmented dataset (output of Stage 1).
+├── test_data.csv # 50-sample test file for API validation.
+├── knn_model.joblib # Saved KNN classification model.
+├── scaler.joblib # Saved StandardScaler for classification features.
+├── encoders.joblib # Saved LabelEncoders for 'Jenis Kelamin' and 'Status Gizi'.
+├── inverse_status_gizi_mapping.joblib # Dictionary to map class indices back to labels.
+└── requirements.txt # Required Python libraries.
 
 ## How to Run
 
@@ -201,4 +211,13 @@ Predicts the nutritional status for multiple children via a CSV file upload.
 ---
 ### `requirements.txt`
 
-pandas==2.2.1 numpy==1.26.3 seaborn==0.13.2 matplotlib==3.8.3 joblib==1.3.2 scikit-learn==1.4.1.post1 plotly==5.20.0 fastapi==0.115.13 pydantic==2.11.5 uvicorn
+pandas==2.2.1
+numpy==1.26.3
+seaborn==0.13.2
+matplotlib==3.8.3
+joblib==1.3.2
+scikit-learn==1.4.1.post1
+plotly==5.20.0
+fastapi==0.115.13
+pydantic==2.11.5
+uvicorn
